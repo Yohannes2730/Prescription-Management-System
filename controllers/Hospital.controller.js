@@ -48,6 +48,7 @@ export const register = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
+//this 
 export const loginHospitalAdmin = async (req, res) => {
   try {
     const { AdminEmail, AdminPassword } = req.body;
