@@ -1,6 +1,3 @@
-# Prompt: Create a Professional GitHub README for AthaNex
-
-Act as a senior software engineer, technical writer, and open-source documentation specialist. Create a complete, professional, visually attractive `README.md` for my project **AthaNex**, using the Software Architecture & Design Document provided below as the primary source of truth.
 
 ## 1. Project Overview
 
@@ -19,40 +16,8 @@ Act as a senior software engineer, technical writer, and open-source documentati
 **Document Version:** 1.0  
 **Last Updated:** August 6, 2025
 
-## 2. README Requirements
 
-Generate a complete GitHub README using clean Markdown, professional formatting, and an appropriate healthcare technology theme.
-
-Include the following sections in a logical order:
-
-1. Project title and introduction
-2. Short, compelling project description
-3. Table of contents with working internal anchor links
-4. Problem statement
-5. Vision and objectives
-6. Key features
-7. User roles and permissions
-8. System architecture
-9. Technology stack
-10. System modules
-11. Project structure
-12. Core data models
-13. API endpoint documentation
-14. Authentication and security
-15. Installation and setup instructions
-16. Environment variable configuration
-17. Running the application locally
-18. Testing instructions
-19. Docker and deployment strategy
-20. Development roadmap
-21. Future enhancements
-22. Contributing guidelines
-23. Authors and contributors
-24. License
-
-If a section requires information that has not been provided, include a clearly marked placeholder or state that the information needs to be confirmed. Do not invent configuration values, repository URLs, license details, commands, or implementation status.
-
-## 3. Core Features to Document
+## 2. Core Features to Document
 
 Organize the platform features into understandable groups:
 
@@ -93,7 +58,7 @@ Organize the platform features into understandable groups:
 
 Clearly distinguish planned capabilities from implemented features.
 
-## 4. User Roles
+## 3. User Roles
 
 Document these four primary stakeholder categories:
 
@@ -102,9 +67,8 @@ Document these four primary stakeholder categories:
 - **Pharmacy:** Manage medicine inventory, review prescriptions, and fulfill orders.
 - **Administrator:** Manage onboarding, verification, platform operations, and analytics.
 
-Explain role-based access at a high level without claiming that specific permissions are already implemented.
 
-## 5. Architecture and Technology Stack
+## 4. Architecture and Technology Stack
 
 The initial architecture described in the source document is a monolithic MVP.
 
@@ -142,9 +106,8 @@ Also document the planned Phase 2 evolution toward microservices:
 - Message broker such as RabbitMQ or Kafka
 - NGINX or another suitable API gateway
 
-Do not present the microservices architecture as the current implementation.
 
-## 6. Project Structure
+## 5. Project Structure
 
 Use the following structure as the proposed initial backend layout:
 
@@ -160,13 +123,8 @@ athanex-server/
 ├── package.json
 └── README.md
 
-Explain each directory briefly.
 
-Label this as a proposed structure and do not claim it matches the actual repository unless verified. If the real repository structure is available, use it instead.
-
-Never generate unnecessary folders or duplicate files.
-
-## 7. API Documentation
+## 6. API Documentation
 
 Create a clean API table using the endpoints from the source document:
 
@@ -185,13 +143,11 @@ Create a clean API table using the endpoints from the source document:
 | POST | `/orders` | User | Place a medicine order |
 | GET | `/orders/pharmacy` | Pharmacy | Retrieve pharmacy orders |
 
-Mention that these routes represent the proposed API design and must be verified against the actual implementation. Do not fabricate request bodies, response payloads, HTTP status codes, or additional endpoints.
 
-## 8. Setup and Configuration
+## 7. Setup and Configuration
 
 Provide a practical setup section for a Node.js/Express/MongoDB application, but only use commands that are valid for the actual repository.
 
-If implementation files or package scripts are unavailable, provide a clearly labeled example workflow rather than claiming it will work without modification.
 
 Include a `.env.example` template with placeholder variables such as:
 
@@ -200,4 +156,3 @@ Include a `.env.example` template with placeholder variables such as:
 - `JWT_SECRET`
 - `NODE_ENV`
 
-Use safe placeholders, never real credentials or production secrets. Explain that OAuth credentials and external notification service credentials should be
